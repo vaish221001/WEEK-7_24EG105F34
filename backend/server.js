@@ -16,7 +16,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://week-7-24-eg-105-f34.vercel.app"
+      "https://week-7-24-eg-105-f34.vercel.app",
        "https://week-7-24-eg-105-f34-cao79x8ly-vaish221001s-projects.vercel.app"
     ],
     credentials: true
