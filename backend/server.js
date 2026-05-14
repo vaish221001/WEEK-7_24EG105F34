@@ -14,10 +14,14 @@ config();
 const app=exp()
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
-    credentials:true  //enables to send the token back to clients
+    origin: [
+      "http://localhost:5173",
+      "https://week-7-24-eg-105-f34.vercel.app"
+    ],
+    credentials: true
   })
 );
+
 app.use(cookieParser()) 
 app.use(exp.json())
 app.use("/user-api",userApp)
