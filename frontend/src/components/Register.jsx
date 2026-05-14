@@ -33,9 +33,9 @@ function Register() {
     try {
       setLoading(true);
 
-      // ✅ FIXED URL (same backend as login)
+      
       let res = await axios.post(
-        "http://localhost:5000/common-api/common",
+        "https://week-7-24eg105f34.onrender.com/common-api/common",
         userObj
       );
 
